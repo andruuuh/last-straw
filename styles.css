@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #faa275;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 2.5px 2.5px #000000;
+}
+
+h1:hover + h2 {
+  display: block;
+  overflow: hidden;
+}
+
+h2 {
+  display: none;
+}
+
+section {
+  font-size: 1rem;
+  display: grid;
+  justify-content: center;
+}
+
+form {
+  margin-top: 2rem;
+  display: grid;
+  grid-row-gap: 1rem;
+  place-self: center;
+}
+
+input {
+  border: 2px dashed #000000;
+  border-radius: 2px;
+  max-width: 200px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 5px groove #000000;
+  border-radius: 2px;
+  background-color: #000000;
+  color: #ffffff;
+  max-width: 200px;
+}
+
+article {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .pwdAttrCheck {
+    display: block;
+    justify-content: center;
+  }
+}
